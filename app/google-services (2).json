@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "689195084942",
+    "project_id": "texnopos-app-5ec54",
+    "storage_bucket": "texnopos-app-5ec54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689195084942:android:e88ca828bf2719dca56ddf",
+        "android_client_info": {
+          "package_name": "uz.texnopos.instagram_texnopos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689195084942-gc7klm5llhgk45id252kbnd5j1988nj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uz.texnopos.instagram_texnopos",
+            "certificate_hash": "600279705c03e198d9b7d5fe44f2846ad4dbd7bd"
+          }
+        },
+        {
+          "client_id": "689195084942-sdgeh4g4c75b563jgci6gkk484oltto4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByBehRVBteDSoCPCTn9Ivv_Zl7xPEMPYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689195084942-sdgeh4g4c75b563jgci6gkk484oltto4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
