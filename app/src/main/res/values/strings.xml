@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Instagramtexnopos</string>
+    <string name="input_your_email">Input your email</string>
+    <string name="input_your_passwort">Input your passwort</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="confirm_your_passwort">Confirm your passwort</string>
+    <string name="fill_the_field">Fill the field</string>
 </resources>
