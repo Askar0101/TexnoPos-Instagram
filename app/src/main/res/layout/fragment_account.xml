@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.AccountFragment">
+
+    <Toolbar
+        android:id="@+id/tolbarAccont"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standart"
+            android:layout_marginTop="@dimen/margin_standart"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:text="@string/mail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/toolbar_text_size"
+            android:textStyle="bold" />
+    </Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="@dimen/marjin_standart"
+        android:layout_marginTop="@dimen/marjin_segizdp"
+        android:src="@drawable/ic_men"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tolbarAccont" />
+
+    <LinearLayout
+        android:id="@+id/linerlayor1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marjin_segizdp"
+        android:layout_marginEnd="@dimen/marjin_tort"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintEnd_toStartOf="@id/linerlayor2"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar">
+
+        <TextView
+            android:id="@+id/tvPostConut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="45"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standart"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+
+            android:maxLines="1"
+            android:text="Публикации"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlayor2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marjin_tort"
+        android:layout_marginEnd="@dimen/marjin_tort"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintEnd_toStartOf="@id/linerlayor3"
+        app:layout_constraintStart_toEndOf="@id/linerlayor1"
+        app:layout_constraintTop_toTopOf="@id/avatar">
+
+        <TextView
+
+            android:id="@+id/tvfollowConut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="4500"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvfollowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Подписчики"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlayor3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marjin_tort"
+        android:layout_marginEnd="@dimen/margin_standart"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linerlayor2"
+        app:layout_constraintTop_toTopOf="@id/avatar">
+
+        <TextView
+
+            android:id="@+id/tvfollowsConut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="89"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvfollowsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Подписки"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standart" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_standart"
+        android:layout_marginTop="@dimen/marjin_segizdp"
+        android:text="Adilbaev Asqarbek"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+    <TextView
+        android:id="@+id/tvBiography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_standart"
+        android:layout_marginTop="@dimen/marjin_segizdp"
+        android:text="Qaraqalpaqstan_Res\nStudent TATU\n 27.06.2001\n TexnoPos Android\n "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_standart"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitil" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEdit"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marjin_oneki"
+        android:layout_marginTop="@dimen/margin_standart"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="Редактировать Профиль"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvBiography" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEdit"
+        app:spanCount="3"/>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

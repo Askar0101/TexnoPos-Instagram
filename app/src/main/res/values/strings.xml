@@ -6,4 +6,15 @@
     <string name="register">Register</string>
     <string name="confirm_your_passwort">Confirm your passwort</string>
     <string name="fill_the_field">Fill the field</string>
+    <string name="passwords_do_not_match_each_other">Passwords do not match each other</string>
+    <string name="icon_account">icon_account</string>
+    <string name="icon_favorite">icon_favorite</string>
+    <string name="icon_add">icon_add</string>
+    <string name="icon_search">icon_search</string>
+    <string name="icon_home">icon_home</string>
+    <string name="mail">asqarbek__</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="edit_profile_image">Изменить фото профиля</string>
+    <string name="write_a_interesting_story">Write a interesting story</string>
+    <string name="sentd_a_post">Sentd a post</string>
 </resources>

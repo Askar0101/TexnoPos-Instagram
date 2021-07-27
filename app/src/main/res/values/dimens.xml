@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_standart">16dp</dimen>
+    <dimen name="marjin_standart">16dp</dimen>
+    <dimen name="marjin_segizdp">8dp</dimen>
+    <dimen name="text_size_standart">16sp</dimen>
+    <dimen name="marjin_tort">4dp</dimen>
+    <dimen name="toolbar_text_size">18sp</dimen>
+    <dimen name="marjin_oneki">12dp</dimen>
 </resources>

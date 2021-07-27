@@ -1,4 +1,4 @@
-package com.texnopos.uz.instagramtexnopos
+package com.texnopos.uz.instagramtexnopos.data
 
 import android.content.Context
 
