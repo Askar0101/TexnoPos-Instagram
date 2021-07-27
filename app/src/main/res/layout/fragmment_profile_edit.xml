@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cancelBTN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_standart"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_standart"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/edit_profile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/toolbar_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/cancelBTN"
+        app:layout_constraintEnd_toStartOf="@id/doneBTN"
+        app:layout_constraintStart_toEndOf="@id/cancelBTN"
+        app:layout_constraintTop_toTopOf="@id/cancelBTN" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/doneBTN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_standart"
+        android:src="@drawable/ic_baseline_done_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="@dimen/margin_standart"
+                android:src="@drawable/ic_men"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEditImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_standart"
+                android:text="@string/edit_profile_image"
+                android:textColor="#07CADC"
+                android:textSize="@dimen/text_size_standart"
+                app:layout_constraintEnd_toEndOf="@id/userImage"
+                app:layout_constraintStart_toStartOf="@id/userImage"
+                app:layout_constraintTop_toBottomOf="@id/userImage" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_standart"
+                android:layout_marginTop="@dimen/margin_standart"
+                android:hint="Имя"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:layout_constraintTop_toBottomOf="@id/tvEditImage">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/margin_standart" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBiography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_standart"
+                android:layout_marginTop="@dimen/margin_standart"
+                android:hint="Биография"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:layout_constraintTop_toBottomOf="@id/edUserName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBiography"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/margin_standart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
